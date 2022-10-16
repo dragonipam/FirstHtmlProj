@@ -25,24 +25,32 @@ section {
 hr{
     size: 1px;
 }
+.image{
+    text-align: left;
+    width: 350px;
+    height: 100px;
+}
+.image_logo{
+    float: left;
+    /*padding-left: 10px;*/
+    width: 200px;
+    height: 200px;
+}
 /*подключаем картинку для шапки*/
 header {
     background: url('https://d626yq9e83zk1.cloudfront.net/files/2017/12/26-770x425.jpg') bottom center no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 200px;
+    height: 100%;
     color: white;
     text-align: center;
 }
-@media (max-width: 400px) {
-    header{
-        visibility: hidden;
-    }
-    body{
-        font-size: 50px;
-    }
-    adress{
-        font-size: 50px;
+@media (max-width: 600px) {
+    .image_logo{
+        float: left;
+        /*padding-left: 10px;*/
+        width: 10%;
+        height: 10%;
     }
 }
 adress {
@@ -62,21 +70,35 @@ adress {
 body{
     font-family: 'Times New Roman', Times, serif;
 }
+@media (max-width: 350px) {
+    header{
+        visibility: hidden;
+    }
+    body{
+        font-size: 50px;
+    }
+    adress{
+        font-size: 25px;
+    }
+    p{
+        font-size: 100%;
+    }
+    main {
+        margin-left: 1%;
+        margin-right: 100%;
+        background: linear-gradient(100%, #ffffff 50%, rgb(14,172,208) 50%);
+    }
+    .flex__item{
+        flex-basis: 180px;
+        flex-grow: 0;
+        margin-right: 10px;
+        font-size: 100%;
+    }
+}
 #demo{
     
     max-width: 900px;
     margin: auto;
-}
-.image{
-    text-align: left;
-    width: 350px;
-    height: 100px;
-}
-.image_logo{
-    float: left;
-    /*padding-left: 10px;*/
-    width: 200px;
-    height: 200px;
 }
 .carousel-caption {
     position: initial;

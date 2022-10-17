@@ -7,6 +7,7 @@
     <title>Информация о программе "Информационные системы и технологии" для абитурентов</title>
     <link rel="stylesheet" href="Style.css"> 
     <script type="text/javascript" href="script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -74,43 +75,81 @@
             </section>
             <hr>
             <section>
-                <div>
-                    <div class="container">
-                        <div id="demo" class="carousel slide" data-ride="carousel">
-                            <h2>Отзывы выпускников</h2>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <div class="carousel-caption">
-                                  <p>Обучаясь на этой специальности, я опредился, что хочу стать Web-разработчиком, 
-                                    в обучении было множество предметов и возможностей изучения сайтостроении и дизайна.
-                                  </p>
-                                  <img src="1.jpg">
-                                  <div id="image-caption">Андрей Минин</div>
-                                  <div id="image-caption">Выпускник - 2022 года</div>
-                                </div>   
-                              </div>
-                              <div class="carousel-item">
-                                <div class="carousel-caption">
-                                  <p>Благодаря обучения, я получила множество знаний и опыта работы на производстве,
-                                     узнала множество языков программирования и теперь могу устроиться на высокооплачиваемую работу.</p>
-                                    <img src="2.jpg" class="img-fluid">
-                                    <div id="image-caption">Мария Захарова</div>
-                                    <div id="image-caption">Выпускник - 2022 года</div>
-                                </div>   
-                              </div>
-                              <div class="carousel-item">
-                                <div class="carousel-caption">
-                                  <p>На этой специальности, изучается множество направлений, программирование, дизайн, сайтостроение,
-                                     базы данных и многое другое. Благодаря этому я смогу сам выбрать направление и развиваться в любом из них.
-                                  </p>
-                                    <img src="3.jpg" class="img-fluid">
-                                    <div id="image-caption">Антон Угрюмов</div>
-                                    <div id="image-caption">Выпускник - 2022 года</div>
-                                </div>   
-                              </div>
-                            </div>
-                          </div>
+                <h2>Отзывы выпускников</h2>
+                <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img src="1.jpg" class="carousel_image">
+                        <p class="p_carousel">Обучаясь на этой специальности, 
+                            я опредился, что хочу стать Web-разработчиком, 
+                            в обучении было множество предметов и 
+                            возможностей для изучения сайтостроении и дизайна.
+                        </p>
+                        <p class="image-caption-bold">Андрей Минин</p>
+                        <p class="image-caption">Выпускник - 2022 года</p>
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3"
+                        class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2"
+                        class="carousel__next">Go to next slide</a>
                     </div>
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                           <img src="2.jpg" class="carousel_image">
+                           <p class="p_carousel">Благодаря обучению, я получила множество знаний и опыта работы на производстве,
+                            узнала множество языков программирования и теперь могу устроиться на высокооплачиваемую работу.</p>
+                            <p class="image-caption-bold">Мария Захарова</p>
+                            <p class="image-caption">Выпускник - 2022 года</p>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                        <img src="3.jpg" class="carousel_image">
+                        <p class="p_carousel">На этой специальности, 
+                            изучается множество направлений, таких как: 
+                            программирование, дизайн, сайтостроение,
+                            базы данных и многое другое. 
+                            Благодаря этому студенты получают знания во всех областях и позже, смогут выбрать направление и
+                             развиваться в любом из них.</p>
+                        <p class="image-caption-bold">Антон Угрюмов</p>
+                        <p class="image-caption">Выпускник - 2022 года</p>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                        class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1"
+                        class="carousel__next">Go to first slide</a>
+                    </li>
+                </ol>
+                <!--<aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                        class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                        class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                        class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                        class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                    </ol>
+                </aside>-->
+                </section>
             </section>
         </article>
     </main>
